@@ -30,7 +30,7 @@ final class xcuitest_exampleUITests: BaseScreen {
         XCTAssertTrue(XCUIApplication().staticTexts["Hello, world!"].exists)
         XCTAssertTrue(XCUIApplication().staticTexts["HelloTest"].exists)
         
-        XCTAssertTrue(wait(for: .hittable, with: XCUIApplication().staticTexts["HelloTest"]))
+        XCTAssertTrue(wait(for: .exists, with: XCUIApplication().staticTexts["HelloTest"]))
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
