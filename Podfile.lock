@@ -1,0 +1,31 @@
+PODS:
+  - GCDWebServer (3.5.4):
+    - GCDWebServer/Core (= 3.5.4)
+  - GCDWebServer/Core (3.5.4)
+  - SBTUITestTunnelClient (8.3.0):
+    - SBTUITestTunnelCommon
+  - SBTUITestTunnelCommon (8.3.0)
+  - SBTUITestTunnelServer (8.3.0):
+    - GCDWebServer
+    - SBTUITestTunnelCommon
+
+DEPENDENCIES:
+  - SBTUITestTunnelClient
+  - SBTUITestTunnelServer
+
+SPEC REPOS:
+  trunk:
+    - GCDWebServer
+    - SBTUITestTunnelClient
+    - SBTUITestTunnelCommon
+    - SBTUITestTunnelServer
+
+SPEC CHECKSUMS:
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
+  SBTUITestTunnelClient: 873869031cec61a5b5540d66f5171a7abdad835d
+  SBTUITestTunnelCommon: 21371c4796ce6826b937d29c79cd8c758f31d775
+  SBTUITestTunnelServer: cb25d44ba2432d46efed49a0c3879c3d59f0915c
+
+PODFILE CHECKSUM: 865f3d90faec8956b1c7f1b61240256da6faff43
+
+COCOAPODS: 1.11.3

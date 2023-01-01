@@ -1,0 +1,6 @@
+framework module Pods_xcuitest_exampleTests {
+  umbrella header "Pods-xcuitest-exampleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
