@@ -167,7 +167,6 @@
 				C4A30E004D7EEA743905EA55 /* Pods-xcuitest-exampleTests.debug.xcconfig */,
 				E4414F83902D79B0123F5C52 /* Pods-xcuitest-exampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -624,7 +623,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4A30E004D7EEA743905EA55 /* Pods-xcuitest-exampleTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -644,7 +642,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4414F83902D79B0123F5C52 /* Pods-xcuitest-exampleTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -664,7 +661,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA6F0A0D42AB6D9914F0BA2B /* Pods-xcuitest-example-xcuitest-exampleUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -682,7 +678,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E88C46B7A40DFF0AC1DFE4B8 /* Pods-xcuitest-example-xcuitest-exampleUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
