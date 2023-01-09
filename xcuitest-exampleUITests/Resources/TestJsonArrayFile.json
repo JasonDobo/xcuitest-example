@@ -1,0 +1,48 @@
+[
+    {
+        "name": "Francisca",
+        "surname": "Simões",
+        "gender": "female",
+        "region": "Portugal",
+        "age": 32,
+        "title": "mrs",
+        "phone": "(570) 920 7105",
+        "birthday": {
+            "dmy": "25/01/1991",
+            "mdy": "01/25/1991",
+            "raw": 664832304
+        },
+        "email": "francisca91@example.com",
+        "password": "Simões91*#",
+        "credit_card": {
+            "expiration": "12/26",
+            "number": "7710-2440-2926-7935",
+            "pin": 7159,
+            "security": 861
+        },
+        "photo": "https://uinames.com/api/photos/female/8.jpg"
+    },
+    {
+        "name": "Rodrigo",
+        "surname": "Carvalho",
+        "gender": "male",
+        "region": "Portugal",
+        "age": 24,
+        "title": "mr",
+        "phone": "(783) 577 1729",
+        "birthday": {
+            "dmy": "19/11/1999",
+            "mdy": "11/19/1999",
+            "raw": 943044906
+        },
+        "email": "rodrigo_99@example.com",
+        "password": "Carvalho99!{",
+        "credit_card": {
+            "expiration": "4/29",
+            "number": "9897-7611-3567-5965",
+            "pin": 1246,
+            "security": 979
+        },
+        "photo": "https://uinames.com/api/photos/male/3.jpg"
+    }
+]

@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152F8A8B296C231400857249 /* NavigationSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A8A296C231400857249 /* NavigationSteps.swift */; };
+		152F8A8E296C239D00857249 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A8D296C239D00857249 /* HomeScreen.swift */; };
+		152F8A90296C244B00857249 /* LaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A8F296C244B00857249 /* LaunchUITests.swift */; };
+		152F8A92296C245B00857249 /* BaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A91296C245B00857249 /* BaseUITests.swift */; };
+		152F8A97296C4C6600857249 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A96296C4C6600857249 /* ServiceManager.swift */; };
+		152F8A99296C4CDA00857249 /* ServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A98296C4CDA00857249 /* ServiceMock.swift */; };
+		152F8A9B296C4EA300857249 /* JSONFetchForMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8A9A296C4EA300857249 /* JSONFetchForMock.swift */; };
+		152F8A9E296C4FBA00857249 /* TestJsonFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 152F8A9D296C4FBA00857249 /* TestJsonFile.json */; };
+		152F8AA2296C533200857249 /* SharedRequestIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152F8AA1296C533200857249 /* SharedRequestIds.swift */; };
+		152F8AA4296C74DC00857249 /* TestJsonArrayFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 152F8AA3296C74DC00857249 /* TestJsonArrayFile.json */; };
 		1578D84E2948BA4D000490E7 /* xcuitest_exampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D84D2948BA4D000490E7 /* xcuitest_exampleApp.swift */; };
 		1578D8502948BA4D000490E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D84F2948BA4D000490E7 /* ContentView.swift */; };
 		1578D8522948BA4E000490E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1578D8512948BA4E000490E7 /* Assets.xcassets */; };
@@ -38,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152F8A8A296C231400857249 /* NavigationSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSteps.swift; sourceTree = "<group>"; };
+		152F8A8D296C239D00857249 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		152F8A8F296C244B00857249 /* LaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUITests.swift; sourceTree = "<group>"; };
+		152F8A91296C245B00857249 /* BaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUITests.swift; sourceTree = "<group>"; };
+		152F8A96296C4C6600857249 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		152F8A98296C4CDA00857249 /* ServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMock.swift; sourceTree = "<group>"; };
+		152F8A9A296C4EA300857249 /* JSONFetchForMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONFetchForMock.swift; sourceTree = "<group>"; };
+		152F8A9D296C4FBA00857249 /* TestJsonFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJsonFile.json; sourceTree = "<group>"; };
+		152F8AA1296C533200857249 /* SharedRequestIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedRequestIds.swift; sourceTree = "<group>"; };
+		152F8AA3296C74DC00857249 /* TestJsonArrayFile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestJsonArrayFile.json; sourceTree = "<group>"; };
 		1578D84A2948BA4D000490E7 /* xcuitest-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "xcuitest-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1578D84D2948BA4D000490E7 /* xcuitest_exampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcuitest_exampleApp.swift; sourceTree = "<group>"; };
 		1578D84F2948BA4D000490E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +108,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152F8A88296C1C0F00857249 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */,
+				1578D8682948BA4E000490E7 /* xcuitest_exampleUITests.swift */,
+				152F8A8F296C244B00857249 /* LaunchUITests.swift */,
+				152F8A91296C245B00857249 /* BaseUITests.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		152F8A89296C1C4400857249 /* Step Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				152F8A8A296C231400857249 /* NavigationSteps.swift */,
+			);
+			path = "Step Definitions";
+			sourceTree = "<group>";
+		};
+		152F8A8C296C238100857249 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1578D8772948BD03000490E7 /* BaseScreen.swift */,
+				152F8A8D296C239D00857249 /* HomeScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		152F8A93296C4BA500857249 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				152F8A95296C4C4900857249 /* NetworkMocks */,
+				152F8A94296C4C3A00857249 /* NetworkManager */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		152F8A94296C4C3A00857249 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				152F8A96296C4C6600857249 /* ServiceManager.swift */,
+				152F8AA1296C533200857249 /* SharedRequestIds.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		152F8A95296C4C4900857249 /* NetworkMocks */ = {
+			isa = PBXGroup;
+			children = (
+				152F8A98296C4CDA00857249 /* ServiceMock.swift */,
+				152F8A9A296C4EA300857249 /* JSONFetchForMock.swift */,
+			);
+			path = NetworkMocks;
+			sourceTree = "<group>";
+		};
+		152F8A9C296C4F8400857249 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				152F8A9D296C4FBA00857249 /* TestJsonFile.json */,
+				152F8AA3296C74DC00857249 /* TestJsonArrayFile.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		1578D8412948BA4C000490E7 = {
 			isa = PBXGroup;
 			children = (
@@ -140,9 +224,11 @@
 		1578D8672948BA4E000490E7 /* xcuitest-exampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				1578D8682948BA4E000490E7 /* xcuitest_exampleUITests.swift */,
-				1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */,
-				1578D8772948BD03000490E7 /* BaseScreen.swift */,
+				152F8A9C296C4F8400857249 /* Resources */,
+				152F8A93296C4BA500857249 /* Stubs */,
+				152F8A8C296C238100857249 /* Screens */,
+				152F8A89296C1C4400857249 /* Step Definitions */,
+				152F8A88296C1C0F00857249 /* Features */,
 			);
 			path = "xcuitest-exampleUITests";
 			sourceTree = "<group>";
@@ -295,6 +381,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152F8AA4296C74DC00857249 /* TestJsonArrayFile.json in Resources */,
+				152F8A9E296C4FBA00857249 /* TestJsonFile.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,9 +513,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152F8A99296C4CDA00857249 /* ServiceMock.swift in Sources */,
 				1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */,
+				152F8A8E296C239D00857249 /* HomeScreen.swift in Sources */,
+				152F8A92296C245B00857249 /* BaseUITests.swift in Sources */,
+				152F8A97296C4C6600857249 /* ServiceManager.swift in Sources */,
 				1578D8692948BA4E000490E7 /* xcuitest_exampleUITests.swift in Sources */,
 				1578D8782948BD03000490E7 /* BaseScreen.swift in Sources */,
+				152F8A90296C244B00857249 /* LaunchUITests.swift in Sources */,
+				152F8AA2296C533200857249 /* SharedRequestIds.swift in Sources */,
+				152F8A9B296C4EA300857249 /* JSONFetchForMock.swift in Sources */,
+				152F8A8B296C231400857249 /* NavigationSteps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
