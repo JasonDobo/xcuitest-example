@@ -8,10 +8,18 @@
 import XCTest
 
 class HomeScreen: BaseScreen {
+
+    let value = "Hello, world!"
+    let id = "HelloTest"
     
-    func isDisplayed() -> Bool {
-        let one = XCUIApplication().staticTexts["Hello, world!"].exists
-        let two = wait(for: .exists, with: XCUIApplication().staticTexts["HelloTest"])
+    func isScreenDisplayed() -> Bool {
+        let one = XCUIApplication().staticTexts[value].exists
+        let two = wait(for: .exists, with: XCUIApplication().staticTexts[id])
         return one && two
+    }
+
+    func isDisplayed() -> Self {
+        XCTAssertTrue(isScreenDisplayed())
+        return self
     }
 }

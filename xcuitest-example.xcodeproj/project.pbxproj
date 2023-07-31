@@ -25,6 +25,10 @@
 		1578D8692948BA4E000490E7 /* xcuitest_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D8682948BA4E000490E7 /* xcuitest_exampleUITests.swift */; };
 		1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */; };
 		1578D8782948BD03000490E7 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D8772948BD03000490E7 /* BaseScreen.swift */; };
+		31E9B3A52A5D83F700B99068 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */; };
+		31E9B3A82A5D845F00B99068 /* ElementState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A72A5D845F00B99068 /* ElementState.swift */; };
+		31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */; };
+		31E9B3AC2A5D8D2B00B99068 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3AB2A5D8D2B00B99068 /* Direction.swift */; };
 		947B27954632EECAF1AFD702 /* Pods_xcuitest_example_xcuitest_exampleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F341F89FFC8E078125609140 /* Pods_xcuitest_example_xcuitest_exampleUITests.framework */; };
 		9B5A6CA44D00645EADF95CC7 /* Pods_xcuitest_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A40FB5BB375809F7451ECA /* Pods_xcuitest_exampleTests.framework */; };
 		F9E2BF894B9A8DDAB659FB6F /* Pods_xcuitest_example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B8EBC9945896EFEF7E4506E /* Pods_xcuitest_example.framework */; };
@@ -70,6 +74,10 @@
 		1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcuitest_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1578D8772948BD03000490E7 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
 		1EA710FA8BAA5AE75BD32C41 /* Pods-xcuitest-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcuitest-example.release.xcconfig"; path = "Target Support Files/Pods-xcuitest-example/Pods-xcuitest-example.release.xcconfig"; sourceTree = "<group>"; };
+		31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
+		31E9B3A72A5D845F00B99068 /* ElementState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementState.swift; sourceTree = "<group>"; };
+		31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extensions.swift"; sourceTree = "<group>"; };
+		31E9B3AB2A5D8D2B00B99068 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		40A40FB5BB375809F7451ECA /* Pods_xcuitest_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcuitest_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8EBC9945896EFEF7E4506E /* Pods_xcuitest_example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcuitest_example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A642B030FE5736483D936F39 /* Pods-xcuitest-example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcuitest-example.debug.xcconfig"; path = "Target Support Files/Pods-xcuitest-example/Pods-xcuitest-example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +232,8 @@
 		1578D8672948BA4E000490E7 /* xcuitest-exampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				31E9B3A62A5D845400B99068 /* Enums */,
+				31E9B3A32A5D83D300B99068 /* Extensions */,
 				152F8A9C296C4F8400857249 /* Resources */,
 				152F8A93296C4BA500857249 /* Stubs */,
 				152F8A8C296C238100857249 /* Screens */,
@@ -231,6 +241,24 @@
 				152F8A88296C1C0F00857249 /* Features */,
 			);
 			path = "xcuitest-exampleUITests";
+			sourceTree = "<group>";
+		};
+		31E9B3A32A5D83D300B99068 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */,
+				31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		31E9B3A62A5D845400B99068 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				31E9B3A72A5D845F00B99068 /* ElementState.swift */,
+				31E9B3AB2A5D8D2B00B99068 /* Direction.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		4C7115C6E2C082A49F134BD0 /* Frameworks */ = {
@@ -516,12 +544,16 @@
 				152F8A99296C4CDA00857249 /* ServiceMock.swift in Sources */,
 				1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */,
 				152F8A8E296C239D00857249 /* HomeScreen.swift in Sources */,
+				31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */,
 				152F8A92296C245B00857249 /* BaseUITests.swift in Sources */,
 				152F8A97296C4C6600857249 /* ServiceManager.swift in Sources */,
 				1578D8692948BA4E000490E7 /* xcuitest_exampleUITests.swift in Sources */,
 				1578D8782948BD03000490E7 /* BaseScreen.swift in Sources */,
+				31E9B3AC2A5D8D2B00B99068 /* Direction.swift in Sources */,
 				152F8A90296C244B00857249 /* LaunchUITests.swift in Sources */,
+				31E9B3A82A5D845F00B99068 /* ElementState.swift in Sources */,
 				152F8AA2296C533200857249 /* SharedRequestIds.swift in Sources */,
+				31E9B3A52A5D83F700B99068 /* XCUIElement+Extensions.swift in Sources */,
 				152F8A9B296C4EA300857249 /* JSONFetchForMock.swift in Sources */,
 				152F8A8B296C231400857249 /* NavigationSteps.swift in Sources */,
 			);

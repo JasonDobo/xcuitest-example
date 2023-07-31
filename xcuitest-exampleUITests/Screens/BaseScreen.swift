@@ -51,25 +51,13 @@ class BaseScreen : XCTestCase {
     func updateText(identifier id: String, with value: String) {
         let element = XCUIApplication().textFields[id]
         waitAndTap(element: element, waiting: 0.2)
-        element.clearText()
+        element.clearField()
         element.typeText(value)
     }
     
     func clearText(identifier id: String) {
         let element = XCUIApplication().textFields[id]
         element.tap()
-        element.clearText()
+        element.clearField()
     }    
-}
-
-extension XCUIElement {
-
-    func clearText() {
-        guard let stringValue = self.value as? String else {
-            return
-        }
-
-        self.coordinate(withNormalizedOffset: CGVector(dx: 0.85, dy: 0.5)).tap()
-        self.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: stringValue.count))
-    }
 }
