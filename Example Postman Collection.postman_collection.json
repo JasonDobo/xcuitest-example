@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "1c6500bf-58c9-4041-a867-529a113a0e15",
+		"name": "Example Postman Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27600244"
+	},
+	"item": [
+		{
+			"name": "https://dummy.restapiexample.com/api/v1/employees",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"var options = {}",
+							"options.index = 0",
+							"utils.gerEmployees(options, pm, function(values) {",
+							"    console.log(values.employee_name)",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Confirm Status code\", function() {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test('Data in json is correct', function() {",
+							"    let jsonData = pm.response.json().data[0]",
+							"",
+							"    pm.expect(jsonData.id).is.to.equal(pm.environment.get(\"id\"))",
+							"    pm.expect(jsonData.employee_name).is.to.equal(pm.environment.get(\"employee_name\"))",
+							"    pm.expect(jsonData.employee_salary).is.to.equal(pm.environment.get(\"employee_salary\"))",
+							"    pm.expect(jsonData.employee_age).is.to.equal(pm.environment.get(\"employee_age\"))    ",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "https",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"utils = {",
+					"",
+					"    gerEmployees: function(options, postman, callback) {",
+					"        var index = options.index ?? 0",
+					"",
+					"        postman.sendRequest({",
+					"            url: \"https://dummy.restapiexample.com/api/v1/employees\",",
+					"            method: 'GET',",
+					"            header: {",
+					"                'Authorization': postman.environment.get(\"apiKey\"),",
+					"            }",
+					"        }, function (err, res) {",
+					"            let response = res.json().data",
+					"            let data = response[index]",
+					"",
+					"            let object = {",
+					"                \"id\": data.id,",
+					"                \"employee_name\": data.employee_name,",
+					"                \"employee_salary\": data.employee_salary,",
+					"                \"employee_age\": data.employee_age",
+					"            };",
+					"",
+					"            postman.environment.set(\"id\", object.id );",
+					"            postman.environment.set(\"employee_name\", object.employee_name );",
+					"            postman.environment.set(\"employee_salary\", object.employee_salary );",
+					"            postman.environment.set(\"employee_age\", object.employee_age );",
+					"",
+					"            callback(object)",
+					"        })",
+					"    }",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
