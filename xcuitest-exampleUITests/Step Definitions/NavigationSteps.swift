@@ -10,7 +10,7 @@ import XCTest
 class NavigationSteps {
     
     func homeScreenIsDisplayed() {
-        XCTAssertTrue(HomeScreen().isDisplayed())
+        XCTAssertTrue(HomeScreen().isScreenDisplayed())
     }
     
 }
