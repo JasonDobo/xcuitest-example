@@ -25,6 +25,9 @@
 		1578D8692948BA4E000490E7 /* xcuitest_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D8682948BA4E000490E7 /* xcuitest_exampleUITests.swift */; };
 		1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */; };
 		1578D8782948BD03000490E7 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1578D8772948BD03000490E7 /* BaseScreen.swift */; };
+		159178092B5BC72F00A97245 /* ElementMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159178082B5BC72F00A97245 /* ElementMatch.swift */; };
+		1591780B2B5BC98900A97245 /* XCUIElementArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591780A2B5BC98900A97245 /* XCUIElementArray+Extensions.swift */; };
+		1591780D2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591780C2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift */; };
 		31E9B3A52A5D83F700B99068 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */; };
 		31E9B3A82A5D845F00B99068 /* ElementState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A72A5D845F00B99068 /* ElementState.swift */; };
 		31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */; };
@@ -73,6 +76,9 @@
 		1578D8682948BA4E000490E7 /* xcuitest_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcuitest_exampleUITests.swift; sourceTree = "<group>"; };
 		1578D86A2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcuitest_exampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1578D8772948BD03000490E7 /* BaseScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		159178082B5BC72F00A97245 /* ElementMatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementMatch.swift; sourceTree = "<group>"; };
+		1591780A2B5BC98900A97245 /* XCUIElementArray+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementArray+Extensions.swift"; sourceTree = "<group>"; };
+		1591780C2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+Extentions.swift"; sourceTree = "<group>"; };
 		1EA710FA8BAA5AE75BD32C41 /* Pods-xcuitest-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcuitest-example.release.xcconfig"; path = "Target Support Files/Pods-xcuitest-example/Pods-xcuitest-example.release.xcconfig"; sourceTree = "<group>"; };
 		31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		31E9B3A72A5D845F00B99068 /* ElementState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementState.swift; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 			children = (
 				31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */,
 				31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */,
+				1591780A2B5BC98900A97245 /* XCUIElementArray+Extensions.swift */,
+				1591780C2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,6 +265,7 @@
 			children = (
 				31E9B3A72A5D845F00B99068 /* ElementState.swift */,
 				31E9B3AB2A5D8D2B00B99068 /* Direction.swift */,
+				159178082B5BC72F00A97245 /* ElementMatch.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -545,8 +554,10 @@
 				1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */,
 				152F8A8E296C239D00857249 /* HomeScreen.swift in Sources */,
 				31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */,
+				159178092B5BC72F00A97245 /* ElementMatch.swift in Sources */,
 				152F8A92296C245B00857249 /* BaseUITests.swift in Sources */,
 				152F8A97296C4C6600857249 /* ServiceManager.swift in Sources */,
+				1591780D2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift in Sources */,
 				1578D8692948BA4E000490E7 /* xcuitest_exampleUITests.swift in Sources */,
 				1578D8782948BD03000490E7 /* BaseScreen.swift in Sources */,
 				31E9B3AC2A5D8D2B00B99068 /* Direction.swift in Sources */,
@@ -554,6 +565,7 @@
 				31E9B3A82A5D845F00B99068 /* ElementState.swift in Sources */,
 				152F8AA2296C533200857249 /* SharedRequestIds.swift in Sources */,
 				31E9B3A52A5D83F700B99068 /* XCUIElement+Extensions.swift in Sources */,
+				1591780B2B5BC98900A97245 /* XCUIElementArray+Extensions.swift in Sources */,
 				152F8A9B296C4EA300857249 /* JSONFetchForMock.swift in Sources */,
 				152F8A8B296C231400857249 /* NavigationSteps.swift in Sources */,
 			);
