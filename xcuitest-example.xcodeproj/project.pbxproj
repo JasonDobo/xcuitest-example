@@ -29,6 +29,7 @@
 		1591780B2B5BC98900A97245 /* XCUIElementArray+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591780A2B5BC98900A97245 /* XCUIElementArray+Extensions.swift */; };
 		1591780D2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591780C2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift */; };
 		15D83DFB2E191A8B0010D3AA /* ContentUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D83DFA2E191A890010D3AA /* ContentUpdateView.swift */; };
+		15D83E062E197AD00010D3AA /* KeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D83E052E197AD00010D3AA /* KeyPath.swift */; };
 		31E9B3A52A5D83F700B99068 /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */; };
 		31E9B3A82A5D845F00B99068 /* ElementState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A72A5D845F00B99068 /* ElementState.swift */; };
 		31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E9B3A92A5D848A00B99068 /* TimeInterval+Extensions.swift */; };
@@ -81,6 +82,7 @@
 		1591780A2B5BC98900A97245 /* XCUIElementArray+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementArray+Extensions.swift"; sourceTree = "<group>"; };
 		1591780C2B5BE45800A97245 /* XCUIElementQuery+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElementQuery+Extentions.swift"; sourceTree = "<group>"; };
 		15D83DFA2E191A890010D3AA /* ContentUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentUpdateView.swift; sourceTree = "<group>"; };
+		15D83E052E197AD00010D3AA /* KeyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPath.swift; sourceTree = "<group>"; };
 		1EA710FA8BAA5AE75BD32C41 /* Pods-xcuitest-example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcuitest-example.release.xcconfig"; path = "Target Support Files/Pods-xcuitest-example/Pods-xcuitest-example.release.xcconfig"; sourceTree = "<group>"; };
 		31E9B3A42A5D83F700B99068 /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		31E9B3A72A5D845F00B99068 /* ElementState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementState.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		31E9B3A62A5D845400B99068 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				15D83E052E197AD00010D3AA /* KeyPath.swift */,
 				31E9B3A72A5D845F00B99068 /* ElementState.swift */,
 				31E9B3AB2A5D8D2B00B99068 /* Direction.swift */,
 				159178082B5BC72F00A97245 /* ElementMatch.swift */,
@@ -563,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				152F8A99296C4CDA00857249 /* ServiceMock.swift in Sources */,
+				15D83E062E197AD00010D3AA /* KeyPath.swift in Sources */,
 				1578D86B2948BA4E000490E7 /* xcuitest_exampleUITestsLaunchTests.swift in Sources */,
 				152F8A8E296C239D00857249 /* HomeScreen.swift in Sources */,
 				31E9B3AA2A5D848A00B99068 /* TimeInterval+Extensions.swift in Sources */,

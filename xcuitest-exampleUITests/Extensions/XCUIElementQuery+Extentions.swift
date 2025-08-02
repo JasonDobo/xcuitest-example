@@ -20,7 +20,7 @@ extension XCUIElementQuery {
     }
     
     @discardableResult
-    func findElements(matching value: ElementMatch, for key: KeyMatch = .label, timeout time: TimeInterval = .loading)-> XCUIElementQuery {
+    func findElements(matching value: ElementMatch, for key: KeyPath = .label, timeout time: TimeInterval = .loading)-> XCUIElementQuery {
         let myPredicate = value.myPredicate(forKeyPatch: key.rawValue)
         let elementQuery = self.matching (myPredicate)
         
@@ -29,7 +29,7 @@ extension XCUIElementQuery {
     }
     
     @discardableResult
-    func findElement(matching value: ElementMatch, for key: KeyMatch = label, timeout time: TimeInterval = .loading) -> XCUIElement {
+    func findElement(matching value: ElementMatch, for key: KeyPath = .label, timeout time: TimeInterval = .loading) -> XCUIElement {
         return findElements(matching: value, for: key, timeout: time).firstMatch
     }
 }
